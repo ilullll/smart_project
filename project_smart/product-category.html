@@ -15,6 +15,9 @@
 			background-color: #ffc899;
 			color: #fff;
 		}
+        .product{
+            margin-top: 100px;
+        }
 		@media (min-width: 992px) {
 			.nav-link{
 				font-size: 20px;
@@ -70,176 +73,39 @@
 </nav>
 <!-- End Header -->
 
-<!-- Slider -->
-<section class="text-center mt-5">
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="styles/img/slider1.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption">
-						<h2>Semua Ada</h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, inventore?</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="styles/img/slider2.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption">
-						<h2>Pengiriman Cepat</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quisquam.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="styles/img/slider3.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption">
-						<h2>Harga Murah</h2>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quod.</p>
-					</div>
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
+<!-- Category -->
+<section class="container product">
+    <div class="row mb-2">
+        <div class="col-lg-6">
+			<h2>Kategori Produk</h2>
 		</div>
-	</div>
-
-</section>
-<!-- End Slider -->
-
-<!-- Product Recomended -->
-<section class="container product-recomended mt-5">
-	<div class="row text-center">
-		<div class="col">
-			<h3 class="">Produk Yang Direkomendasikan</h3>
-		</div>
-	</div>
-	<div class="row py-lg-6 row-cols-2 row-cols-sm-2 row-cols-md-5 g-4">
-		<div class="col">
-			<div class="">
-				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></svg>
-				<div class="card-body">
-					<h5 class="card-text">Nama Produk</h5>
-					<div class="row">
-						<div class="col">
-							<p class="card-text fw-lighter fs-6">Kategori</p>
-						</div>
-						<div class="col">
-							<p class="">Rating <i class="bi bi-star-fill">4,7</i></p>
-						</div>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-sm btn-color">Lihat Produk</button>
-						</div>
-						<small class="text-muted">Rp.120.000</small>
-					</div>
-				</div>
+		<div class="col-lg-3 col-6">
+			<div class="category">
+				<select class="form-select">
+					<option selected>Pilih Kategori</option>
+					<option value="Kategori A">Kategori A</option>
+					<option value="Kategori B">Kategori B</option>
+					<option value="Kategori C">Kategori C</option>
+					<option value="Kategori D">Kategori D</option>
+					<option value="Kategori E">Kategori E</option>
+					<option value="Kategori F">Kategori F</option>
+					<option value="Kategori G">Kategori G</option>
+					<option value="Kategori H">Kategori H</option>
+				  </select>
 			</div>
 		</div>
-		<div class="col">
-			<div class="">
-				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></svg>
-				<div class="card-body">
-					<h5 class="card-text">Nama Produk</h5>
-					<div class="row">
-						<div class="col">
-							<p class="card-text fw-lighter fs-6">Kategori</p>
-						</div>
-						<div class="col">
-							<p>Rating <i class="bi bi-star-fill">4,7</i></p>
-						</div>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-sm btn-color">Lihat Produk</button>
-						</div>
-						<small class="text-muted">Rp.120.000</small>
-					</div>
-				</div>
+		<div class="col-lg-3 col-6">
+			<div class="category">
+				<select class="form-select">
+					<option selected>Urutkan Berdasarkan</option>
+					<option value="Paling Baru">Paling Baru</option>
+					<option value="Paling Populer">Paling Populer</option>
+					<option value="Paling Laris">Paling Laris</option>
+				  </select>
 			</div>
-		</div>
-		<div class="col">
-			<div class="">
-				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></svg>
-				<div class="card-body">
-					<h5 class="card-text">Nama Produk</h5>
-					<div class="row">
-						<div class="col">
-							<p class="card-text fw-lighter fs-6">Kategori</p>
-						</div>
-						<div class="col">
-							<p>Rating <i class="bi bi-star-fill">4,7</i></p>
-						</div>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-sm btn-color">Lihat Produk</button>
-						</div>
-						<small class="text-muted">Rp.120.000</small>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="">
-				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></svg>
-				<div class="card-body">
-					<h5 class="card-text">Nama Produk</h5>
-					<div class="row">
-						<div class="col">
-							<p class="card-text fw-lighter fs-6">Kategori</p>
-						</div>
-						<div class="col">
-							<p>Rating <i class="bi bi-star-fill">4,7</i></p>
-						</div>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-sm btn-color">Lihat Produk</button>
-						</div>
-						<small class="text-muted">Rp.120.000</small>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="">
-				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></svg>
-				<div class="card-body">
-					<h5 class="card-text">Nama Produk</h5>
-					<div class="row">
-						<div class="col">
-							<p class="card-text fw-lighter fs-6">Kategori</p>
-						</div>
-						<div class="col">
-							<p>Rating <i class="bi bi-star-fill">4,7</i></p>
-						</div>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-sm btn-color">Lihat Produk</button>
-						</div>
-						<small class="text-muted">Rp.120.000</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End Product Recomended -->
-
-<!-- Product -->
-<section class="container product mt-5">
-	<div class="row py-lg-8 row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
+		</div>		
+    </div>
+	<div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
 		<div class="col">
 			<div class="card shadow-sm">
 				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></svg>
@@ -417,7 +283,7 @@
 			</div>
 		</div>	
 </section>
-<!-- End Product -->
+<!-- End Category -->
 
 <!-- Footer -->
 <section class="mt-5">
